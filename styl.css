@@ -13,13 +13,14 @@ body{
     color: #F6F6F6;
 }
 
-header{
-    background-color: aqua;
+.topo{
+    display: flex;
+    padding: 0px 512px;
+    text-align: center;
+    background-color: #D31B7F;
 }
 
-.cor{
-    background-color: #831515;
-}
+
 .titulo-destaque{
     color: #22D4FD;
 }
