@@ -1,6 +1,51 @@
-.topo{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
     display: flex;
-    padding: 0px 512px;
-    text-align: center;
-    background-color: #ac638b;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo,.sociais{
+    width: 23%;
+}
+
+.logo img{
+    width: 125px;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+.sociais button{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+.sociais button i{
+    font-size: 20px;
 }
