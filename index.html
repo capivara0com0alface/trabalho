@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho com Menu Hamburguer</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Conectando o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de Programação</title> 
 </head>
-<body>
-
+<body>  
+   
     <header>
-        <div class="menu">
-            <!-- Ícone do menu hamburguer -->
-            <div class="hamburger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <div class="container"> </div>
+            <div class="logo"><img src="img/a.jfif"></div>
+            <div class="menu">
+                <div class="topnav">
+                
+                <nav>
+                    <a href="#">Atividades</a>
+                    <a href="#">Provas</a>
+                    <a href="#">Trabalhos</a>
+                    <a href="#">Notas</a>
+                </nav>
             </div>
-
-            <!-- Menu de navegação -->
-            <ul id="menu-list">
-                <li><a href="#">Atividades</a></li>
-                <li><a href="#">Provas</a></li>
-                <li><a href="#">Notas</a></li>
-            </ul>
-        </div>
+            <div class="sociais">
+                <button><i class="fa-brands fa-square-instagram"></i></button>
+                <button><i class="fa-brands fa-square-instagram"></i></button>
+                <button><i class="fa-brands fa-square-instagram"></i></button>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>    
     </header>
-
-    <script src="script.js"></script> <!-- Conectando o arquivo JavaScript -->
 </body>
 </html>
