@@ -1,94 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+.logo img {
+  max-height: 50px;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sociais button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
-.container{
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Menu Hamburguer (Responsivo) */
+.menu {
+  display: flex;
+  gap: 20px;
 }
 
-header{
-    background-color: black;
-    width: 100%;
-    padding: 10px;
-}
-
-.logo,.sociais{
-    width: 23%;
-}
-
-.logo img{
-    width: 125px;
-}
-
-.menu{
-    width: 50%;
-}
-
-.menu nav a{
-    color: white;
-    text-decoration: none;
-    padding-right: 25px;
-    font-size: 20px;
-}
-
-.sociais button{
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-}
-
-
-.sociais button i{
-    font-size: 20px;
-}
-
-
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none; /* Menu oculto por padrão em telas pequenas */
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
+
+  .menu a {
+      font-size: 20px;
+      padding: 10px 0;
   }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+
+  .icon {
+      display: block; /* Ícone hambúrguer visível em telas pequenas */
   }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+  .menu.active {
+      display: block; /* Mostrar o menu quando a classe 'active' for adicionada */
   }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
+}
