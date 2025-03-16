@@ -1,9 +1,5 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+// Função para alternar a visibilidade do menu
+function toggleMenu() {
+  var menu = document.getElementById("menu-list");
+  menu.classList.toggle("active");
+}
