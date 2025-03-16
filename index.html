@@ -11,28 +11,23 @@
 <body>  
    
     <header>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <div class="container"> </div>
-            <div class="logo"><img src="img/a.jfif"></div>
-            <div class="menu">
-                <div class="topnav">
-                
-                <nav>
-                    <a href="#">Atividades</a>
-                    <a href="#">Provas</a>
-                    <a href="#">Trabalhos</a>
-                    <a href="#">Notas</a>
-                </nav>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
             </div>
-            <div class="sociais">
-                <button><i class="fa-brands fa-square-instagram"></i></button>
-                <button><i class="fa-brands fa-square-instagram"></i></button>
-                <button><i class="fa-brands fa-square-instagram"></i></button>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-        </div>    
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
     </header>
 </body>
 </html>
