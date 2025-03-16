@@ -1,5 +1,5 @@
 // Função para alternar a visibilidade do menu
-function myFunction() {
-  var menu = document.getElementById("menu");
-  menu.classList.toggle("active"); // Adiciona ou remove a classe 'active' para mostrar/ocultar o menu
+function toggleMenu() {
+  var menu = document.getElementById("menu-list");
+  menu.classList.toggle("active");  // Alterna a classe "active" para mostrar/esconder o menu
 }
