@@ -99,5 +99,8 @@ body {
 }
 
 .luego{
-  
+  position: absolute;
+  width: 82%;
+  left: 1px;
+  top: 221px;
 }
